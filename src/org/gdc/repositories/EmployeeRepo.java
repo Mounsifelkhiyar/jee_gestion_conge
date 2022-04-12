@@ -1,0 +1,16 @@
+package org.gdc.repositories;
+
+import java.util.List;
+
+import org.gdc.models.Employee;
+
+public interface EmployeeRepo {
+	public void updateannee(int duree);
+	public Employee getEmployee(String username);
+	public void actualizeRemainingBalance(Employee emp, int newRemainingBalance);
+	public List<Employee> getEmployees();
+	public void addEmployee(Employee newEmp);
+	public void updateEmployee(Employee employee, String login);
+	public Integer countEmployeesByTeam(String team);
+	public void deleteEmployee(Employee empToDelete);
+}
